@@ -71,6 +71,25 @@ Note that there is a small disturbance in the RD terminal during when the transm
 
 ## Conclution
 
+In 10T SRAM, since the inverter is directly connect with the memory element to make the READ operation independent of access transistors, we can actually reduce the read delay 
+because now we don't need to wait for the access transistors to turn on for read operation.But the write operation still takes time because it still depends on Access transistors.In this section we are going to prove that the READ speed is increased by making the READ operation independent on ACCESS Transistors.
+
+For measuring the read and write operation delay we simulated the same circuit, but by keeping the Timeperiod of input waveforms in nanometers we got the following results.
+
+![compare read and write](https://user-images.githubusercontent.com/99113992/152933868-f7727778-3dd6-4ef7-bc85-453e18634cd9.png)
+
+From the figure, 
+
+A = write 0 delay (i.e.,Time taken for BL=0 passes through the Access transistor to memory element(latch) and make Q=0)  
+
+B = write 1 delay (i.e.,Time taken for BL=1 passes through the Access transistor to memory element(latch) and make Q=1)
+
+C = Read 0 delay  (i.e.,Time taken for Q=0 passes through the inverter and transmission gate and make RD=1)
+
+D = Read 1 delay  (i.e.,Time taken for Q=1 passes through the inverter and transmission gate and make RD=0)
+
+From the above waveform we can say that both the Read 0 and Read 1 delay is less than write 0 and write 1.Therefore, by making the read operation independent of Access transistors by adding the additional circuit for measuring READ operation we increased the READ Operation speed.
+
 ## References
 
 PN.V.Kiran, N.Saxena, "Parameter Analysis of different SRAM Cell Topologies and Design of 10T SRAM Cell at 45nm Technology with Improved Read Speed",International Journal of Hybrid Information Technology,Vol.9, No.2 (2016).
