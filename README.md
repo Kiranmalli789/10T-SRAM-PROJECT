@@ -92,7 +92,7 @@ C = Read 0 delay  (i.e.,Time taken for Q=0 passes through the inverter and trans
 
 D = Read 1 delay  (i.e.,Time taken for Q=1 passes through the inverter and transmission gate and make RD=0)
 
-From the above waveform we can say that both the Read 0 and Read 1 delay is less than write 0 and write 1.Therefore, by making the read operation independent of Access transistors by adding the additional circuit for measuring READ operation we increased the READ Operation speed and hence reduced the leakage power.And through this we increase the read stability since we isolated 
+From the above waveform we can say that both the Read 0 and Read 1 delay is less than write 0 and write 1 respectively.Therefore, by making the read operation independent of Access transistors by adding the additional circuit for measuring READ operation we increased the READ Operation speed and hence reduced the leakage power.And through this we increase the read stability since we isolated 
 the memory element from external noise.
 
 ## References
