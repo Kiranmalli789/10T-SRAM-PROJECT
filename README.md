@@ -106,3 +106,5 @@ Kunal Ghosh,Co-founder of VLSI System Design Corporation Pvt. Ltd.
 ## Author
 
 Malli Chenchu Kiran, Final Year B.TECH, ECE, Indian Institute of Information Technology,Design and Manufacturing,(IIITDM) Kancheepuram
+
+Email: Kiran.malli789@gmail.com
