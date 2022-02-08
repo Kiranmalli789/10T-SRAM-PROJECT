@@ -47,8 +47,8 @@ There are three modes of operation of 10T SRAM:
 Since Memory write operation still uses the access transistors unlike Memory operation, the Memory write operation will be slower when compared to memory read operation.
 
 The main advantage of this 10T SRAM is that it doesn't require the precharge capacitors connected to a sense amplifier for memory read/write operation as that of 6T SRAM,
-because here the data stored in memory is directly passes through the inverter and transmision gates.And also the charging or discharging of RDout happens only when the 
-RDout changes,i.e, there is no power is consumed or dissipated if the next data is same as that of previous value.Therefore, this design of 10T SRAM reduces the 
+because here the data stored in memory is directly passes through the inverter and transmision gates.And also the charging or discharging of RD happens only when the 
+RD changes,i.e, there is no power is consumed or dissipated if the next data is same as that of previous value.Therefore, this design of 10T SRAM reduces the 
 consumption of when consecutive readout values are same.
 
 ## Simulation Waveforms
@@ -72,7 +72,7 @@ Note that there is a small disturbance in the RD terminal during when the transm
 ## Conclution
 
 In 10T SRAM, since the inverter is directly connect with the memory element to make the READ operation independent of access transistors, we can actually reduce the read delay 
-because now we don't need to wait for the access transistors to turn on for read operation.But the write operation still takes time because it still depends on Access transistors.In this section we are going to prove that the READ speed is increased by making the READ operation independent on ACCESS Transistors.
+because now we don't need to wait for the access transistors to turn on for read operation.But the write operation still takes time because it still depends on Access transistors.In this section we are going to prove that the READ speed is increased by making the READ operation independent on Access Transistors.
 
 For measuring the read and write operation delay we simulated the same circuit, but by keeping the Timeperiod of input waveforms in nanometers we got the following results.
 
@@ -88,7 +88,8 @@ C = Read 0 delay  (i.e.,Time taken for Q=0 passes through the inverter and trans
 
 D = Read 1 delay  (i.e.,Time taken for Q=1 passes through the inverter and transmission gate and make RD=0)
 
-From the above waveform we can say that both the Read 0 and Read 1 delay is less than write 0 and write 1.Therefore, by making the read operation independent of Access transistors by adding the additional circuit for measuring READ operation we increased the READ Operation speed.
+From the above waveform we can say that both the Read 0 and Read 1 delay is less than write 0 and write 1.Therefore, by making the read operation independent of Access transistors by adding the additional circuit for measuring READ operation we increased the READ Operation speed and hence reduced the leakage power.And through this we increase the read stability since we isolated 
+the memory element from external noise.
 
 ## References
 
