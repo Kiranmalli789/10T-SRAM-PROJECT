@@ -19,8 +19,10 @@
 
 Now-a-days among different memory elements SRAM(Static Random Access Memory) became very popular because of their high speed operations and low power consumption.
 The most common SRAM cell used in todays applications are 6T SRAM.Even through it has low power consumption and high speed operation compared other memory elements
-like DRAM,the read operation in 6T SRAM is still slow because of the time taken by the access transistors to access the memory part(latch) of the SRAM, which 
-further results in increase of leakage power.So,In this paper we have discussed about the 10T SRAM which has low leakage power, high read operation speed,avoid 
+like DRAM,the read operation in 6T SRAM is still slow because of the time taken by the access transistors to access the memory part(latch) of the SRAM,i.e.,time taken
+for the read/write operation would be quite large resulting in increased leaksge power over this long period of time in the idle circuit.And also since the READ operation 
+is performed by making WL=1 and keeping the access transistors in Active state, the read operation may disturb or corrupt the data present in the memory element(latch) due 
+to the external static noise.So,In this paper we have discussed about the 10T SRAM which has low leakage power, high read operation speed,avoid 
 noise in read operation and solves the limitations of conventional 6T SRAM.
 
 ## Circuit Design and Details
