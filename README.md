@@ -15,6 +15,10 @@
 
 6.[References](#References)
 
+7.[Acknowledgement](#Acknowledgement)
+
+8.[Author](#Author)
+
 ## Introduction
 
 Now-a-days among different memory elements SRAM(Static Random Access Memory) became very popular because of their high speed operations and low power consumption.
@@ -94,3 +98,11 @@ the memory element from external noise.
 ## References
 
 PN.V.Kiran, N.Saxena, "Parameter Analysis of different SRAM Cell Topologies and Design of 10T SRAM Cell at 45nm Technology with Improved Read Speed",International Journal of Hybrid Information Technology,Vol.9, No.2 (2016).
+
+## Acknowledgement
+
+Kunal Ghosh,Co-founder of VLSI System Design Corporation Pvt. Ltd.
+
+## Author
+
+Malli Chenchu Kiran, Final Year B.TECH, ECE, Indian Institute of Information Technology,Design and Manufacturing,(IIITDM) Kancheepuram
